@@ -1,11 +1,12 @@
 import feedparser
+import os
 from pymongo import MongoClient
 from fastapi import FastAPI, HTTPException, BackgroundTasks
 from pydantic import BaseModel
 from typing import List, Optional
 from datetime import datetime
 from dotenv import load_dotenv
-import os
+
 
 # Load environment variables from .env file
 load_dotenv()
